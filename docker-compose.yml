@@ -1,0 +1,9 @@
+dctb-nodejs:
+  container_name: dctb-nodejs
+  image: diogocezar/nodejs
+  volumes:
+    - "./data:/data"
+  ports:
+    - "8888:8888"
+    - "2222:22"
+  tty: true
